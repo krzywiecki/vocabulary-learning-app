@@ -1,0 +1,12 @@
+<div class="words-box">
+  <form>
+    <div [ngClass]="{ 'fadeOutUp': isAnswerCorrect === true, 'shake': isAnswerCorrect === false, 'animated': isBoolean(isAnswerCorrect) }" style="text-align:right;"><span>{{ word }}</span>:</div>
+    <div [ngClass]="{ 'shake animated': isAnswerCorrect === false }" style="width:16%;">
+      <input [(ngModel)]="answer" name="answer" type="text" placeholder="translate here" autocomplete="off">
+    </div>
+    <div style="width:16%;">
+      <button (click)="check();" type="submit" class="btn btn-green">Check</button>
+      <button (click)="skip();" type="reset" class="btn btn-orange">Skip</button>
+    </div>
+  </form>
+</div>

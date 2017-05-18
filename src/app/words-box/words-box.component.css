@@ -1,0 +1,56 @@
+.words-box {
+  width: 100%;
+  height: 100vh;
+  display: block;
+  position: relative;
+  font-size:32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+div {
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  width: 45%;
+  display: inline-block;
+  float: left;
+  text-align: left;
+  padding-top: 21vh;
+}
+
+.input-box {
+  width: 16%;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  width: 100%;
+  float: left;
+  outline: 0;
+  padding: 0 3px;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.blur {
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px);
+}
