@@ -6,7 +6,7 @@
     </div>
     <div style="width:16%;">
       <button (click)="check();" type="submit" class="btn btn-green">Check</button>
-      <button (click)="skip();" type="reset" class="btn btn-orange">Skip</button>
+      <button (click)="skip();" type="reset" class="btn btn-orange">{{ shouldShowNextWord ? 'Skip' : 'Next' }}</button>
     </div>
   </form>
 </div>
